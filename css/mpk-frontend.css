@@ -1,0 +1,74 @@
+ /* CSS for Frontend
+ *
+ * @package WordPress
+ * @subpackage Music Press Kit Plugin
+ * @author Cristian Rodriguez
+ * @since 1.0.0
+ */
+ .elementor-icon {
+  display: inline-block;
+  line-height: 1;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  color: #818a91;
+  font-size: 50px;
+  text-align: center;
+}
+.elementor a {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-decoration: none;
+}
+.elementor-view-framed .elementor-icon {
+  padding: .5em;
+  color: #818a91;
+  border: 3px solid #818a91;
+  background-color: transparent;
+}
+.elementor-shape-circle .elementor-icon {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.elementor-element.elementor-element-84fbbf1.elementor-view-framed .elementor-icon,
+.elementor-element.elementor-element-84fbbf1.elementor-view-default .elementor-icon {
+  color: #fff;
+  border-color: #fff;
+}
+.elementor-element.elementor-element-84fbbf1.elementor-view-framed .elementor-icon {
+  background-color: rgba(255,255,255,.09);
+}
+.elementor-icon i:before {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.fa:not(.fas):not(.far):not(.fab) {
+  font-weight: normal;
+}
+.elementor-icon i {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  display: block;
+}
+@keyframes elementor-animation-pulse{
+  25%{
+		transform:scale(1.1)
+  }
+  75%{
+		transform:scale(.9)
+  }
+}
+.elementor-animation-pulse:hover {
+  animation-name: elementor-animation-pulse;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.elementor-widget-heading .elementor-heading-title>a {
+  color: inherit;
+  font-size: inherit;
+}
